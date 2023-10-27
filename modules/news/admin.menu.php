@@ -90,6 +90,7 @@ if (!isset($site_mods['cms'])) {
 }
 
 if ($NV_IS_ADMIN_MODULE) {
+    $submenu['statistical'] = $lang_module['statistical'];
     $submenu['cat'] = $lang_module['categories'];
     $submenu['tags'] = $lang_module['tags'];
     $submenu['groups'] = $lang_module['block'];
@@ -104,6 +105,7 @@ if ($NV_IS_ADMIN_MODULE) {
         ]
     ];
 
+    $allow_func[] = 'statistical';
     $allow_func[] = 'cat';
     $allow_func[] = 'change_cat';
     $allow_func[] = 'list_cat';
